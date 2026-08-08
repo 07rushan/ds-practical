@@ -1,16 +1,14 @@
 #include <iostream>
 using namespace std;
 
-// Traversal
 void traversal(int arr[], int n)
 {
     cout << "Array Elements: ";
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
-    cout << endl;
+    cout <<endl;
 }
 
-// Insertion
 void insertion(int arr[], int &n)
 {
     int value, pos;
@@ -24,12 +22,11 @@ void insertion(int arr[], int &n)
     n++;
 }
 
-// Deletion
 void deletion(int arr[], int &n)
 {
     int pos;
     cout << "Enter position to delete: ";
-    cin >> pos;
+    cin>>pos;
 
     for (int i = pos; i < n - 1; i++)
         arr[i] = arr[i + 1];
@@ -37,12 +34,11 @@ void deletion(int arr[], int &n)
     n--;
 }
 
-// Search
 void search(int arr[], int n)
 {
     int key;
     cout << "Enter element to search: ";
-    cin >> key;
+    cin>>key;
 
     for (int i = 0; i < n; i++)
     {
@@ -95,11 +91,11 @@ int main()
             break;
 
         case 5:
-            cout << "Program Ended." << endl;
+            cout << "Program Ended" << endl;
             break;
 
         default:
-            cout << "Invalid Choice!" << endl;
+            cout << "Invalid Choice" << endl;
         }
 
     } while (choice != 5);
